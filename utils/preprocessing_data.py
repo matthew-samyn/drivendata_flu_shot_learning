@@ -1,12 +1,14 @@
 from functions import *
 
+pd.set_option("display.max_rows",999)
+pd.set_option("display.max_columns", 999)
 df = pd.read_csv("../data/training_set_features.csv")
 
 
 target = pd.read_csv("../data/training_set_labels.csv")
 
 full_df = pd.merge(df, target, on="respondent_id")
-
+print(full_df.isna().sum())
 # 2-category columns to binary column
 full_df["sex"] = df["sex"].apply(lambda x: category_to_binary(x,"Male"))
 full_df["marital_status"] = df["marital_status"].apply(lambda x:
@@ -14,7 +16,6 @@ full_df["marital_status"] = df["marital_status"].apply(lambda x:
 
 full_df["rent_or_own"] = df["rent_or_own"].apply(lambda x:
                                             category_to_binary(x, "Rent"))
-
 # get_dummies on multiple-category-columns
 types = ["int64","float64"]
 categorical = []
