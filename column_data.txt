@@ -1,0 +1,24 @@
+h1z1 - 
+WEG - behavioral_antiviral_meds
+WEG - behavioral_large_gatherings
+WEG - behavioral_outside_home
+WEG - opinion_seas_risk
+WEG - opinion_seas_sick_from_vacc
+WEG - opinion_seas_vacc_effective
+WEG - houdehold_adults
+WEG - household_children
+WEG - doctor_recc_seasonal
+WEG - opinion_h1n1_sick_from_vacc
+
+KEEP - [xtkaffoo, xgwztkwe, mxkfnird, haliazsg, emcorrxb, dcjcmpih,cmhcxjea, wxleyezf, 
+
+
+
+
+
+
+seasonal -
+WEG - [doctor_recc_h1n1, child_under_6_months, opinion_h1n1_vacc_effective, opinion_h1n1_risk,opinion_h1n1_sick_from_vacc,opinion_seas_sick_from_vacc,
+household_adults,household_children]
+
+
