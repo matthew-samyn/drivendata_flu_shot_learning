@@ -5,7 +5,6 @@ import os
 import re
 
 
-
 def seperate_columns_by_type(df_series:pd.Series, types:List) -> bool:
     """ Seperates dataframe columns into categorical and numerical """
     if df_series.dtype in types:
